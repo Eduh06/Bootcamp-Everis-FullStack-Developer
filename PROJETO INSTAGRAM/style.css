@@ -1,0 +1,149 @@
+
+/*---iniciando as formatações---*/ 
+
+* {		
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 14px; 
+}
+
+/*---formatações do body---*/ 
+
+body{
+	width: 100%;
+	min-height: 100vh;
+	background-color: rgb(243, 243, 243);
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+/*---formatações da div principal---*/ 
+
+.Instagram-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		width: 50%;
+		height: 100vh;
+}
+
+/*---formatação do container do celular---*/ 
+
+.Instagram-phone{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+}
+
+.Instagram-phone img{
+	height: 90vh;
+}
+
+/*---formatação do container de login---*/ 
+
+.Instagram-continue{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	width: 50%;
+	min-height: 40rem;
+}
+
+.group{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	background-color: white;
+	width: 100%;
+	padding: 1.9rem 0;
+	border: 1px solid lightgray;
+}
+
+.group:nth-child(1) {
+	min-height: 19rem;
+}
+
+/*---formatação do logo do instagram---*/ 
+
+.Instagram-logo{
+	height: 3rem;
+}
+
+/*---formatação da foto de perfil---*/ 
+
+.profile-photo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.profile-photo img{
+	height: 10rem;
+}
+
+/*---formatação do botão login ; logout ; no acoount---*/ 
+
+.Instagram-login{
+	background-color: PowderBlue;
+	color: white;
+	padding: 8px; 
+	border-radius: 4px;
+}
+
+.Instagram-logout{
+	color: PowderBlue;
+	margin-top: 1rem;
+}
+
+.not-account {
+	color: PowderBlue;
+}
+
+.link-blue{
+	color: PowderBlue;
+}
+
+/*---formatação dos itens de download*/
+
+.get-the-app{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 1.3rem 0;
+}
+
+.download{
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 1rem;
+}
+
+.app-download{
+	
+	width: 13rem;
+	background-size: cover;
+}
+
+.app-download:nth-child(1){
+	background-image: url(imagens/app.png);
+	height: 2.7rem;
+}
+
+.app-download:nth-child(2){
+	background-image: url(imagens/google-play.png);
+	height: 4rem;
+}
