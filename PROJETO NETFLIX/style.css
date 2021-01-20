@@ -1,0 +1,112 @@
+
+/*----------RESET DOS ESTILOS INICIAIS------------------*/
+*{
+	margin: 0;
+	padding: 0;   
+}
+
+/*--------------FORMATAÇÃO DE UMA TAG------------------*/
+:root{
+	--vermelho: #E50914;
+	--preto: black;
+}
+
+/*--------------FORMATAÇÃO DO BODY---------------------*/
+body{
+	background: var(--preto); 							/*COR DE FUNDO DO SITE*/
+	font-family: 'Arial-black',Times, serif;		/*ESTILO DA LETRA*/
+	color: white;										/*COR DAS PALAVRAS*/
+}
+
+header .container{
+	display: flex;							/*CONFIGURADO DISPLAY */
+	flex-direction: row;					/*CONFIGURADO DIREÇÃO DO ALINHAMENTO */
+	align-items: center;					/*ALINHA OS ITENS NA VERTICAL*/
+	justify-content: space-between;			/*CRIA UM ESPAÇO ENTRE A TAG H2 E A TAG NAV*/
+	height: 56px;
+}
+
+/*--------------FORMATAÇÃO DO LOGO DA NETFLIX---------------------*/
+header .logo{
+	margin-left: 25px;							/*ESPAÇAMENTO A ESQUERDA*/
+	color: var(--vermelho);						/*COR DA PALAVRA*/
+	font-family: 'Arial', Times;			/*ESTILO DA LETRA*/
+	font-size: 40px;							/*TAMANHO DA LETRA*/
+}
+
+/*--------------FORMATAÇÃO DOS MENUS---------------------*/
+header nav a{
+	text-decoration: none;  				/*RETIRA O SUBLINHADO DAS PALAVRAS*/
+	color: #AAA;							/*COR DAS PALAVRAS*/
+	margin-right: 10px;						/*COLOCA UMA MARGEM A DIREITA*/
+}
+
+header nav a:hover{  					/*MUDA O ESTADO DA PALAVRA AO PASSAR O MOUSE NELA*/
+	color: #fff;						/*MUDA A COR */
+}
+
+/*--------------FORMATAÇÃO DO FILME PRINCIPAL---------------------*/
+.filme-principal{
+		font-size: 16px;
+		background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('IMG/IMAGEM-FUNDO.jpg');
+		/*COLOCADA UMA IMAGEM DE FUNDO E ADICIONADO UM EFEITO GRADIENTE*/
+
+		height: 650px;					/*DEFINIDO TAMANHO DO CONTAINER */
+		background-size: cover; 		/*FEITA A IMAGEM OCUPAR TODO O ESPAÇO */
+
+		display: flex;
+		flex-direction: column;			/*MUDA O PADRÃO DE LINHA PARA COLUNA */
+		justify-content: center;		/*CENTRALIZA O CONTEÚDO NA VERTICAL */
+		align-items: flex-start;		/* INICIA O CONTEÚDO A ESQUERDA NA HORIZONTAL*/
+}
+
+.filme-principal .descricao{
+	margin-top: 20px;			/*COLOCA UM ESPAÇO NA MARGEM SUPERIOR */
+	margin-bottom: 40px;		/*COLOCA UM ESPAÇO NA MARGEM INFERIOR */
+	margin-left: 15px;			/*COLOCA UM ESPAÇO A ESQUERDA*/
+	width: 55%;
+}
+
+.filme-principal .ficha{
+	margin-top: 20px;				/*COLOCA UM ESPAÇO NA MARGEM INFERIOR */
+	margin-left: 15px;				/*COLOCA UM ESPAÇO A ESQUERDA*/
+	color: #A3A3A3;					/*COLOCA UM ESPAÇO NA MARGEM SUPERIOR */
+}
+
+.idade{
+	border: 1px solid #A3A3A3;		/*COLOCA UMA BORDA */
+    padding: 0 5px;					/*ADICIONADO ESPAÇAMENTO INTERNO */
+}
+
+.mais{
+	margin-bottom: 20px;			/*COLOCA UM ESPAÇO NA MARGEM INFERIOR */
+	margin-top: 30px;				/*COLOCA UM ESPAÇO NA MARGEM SUPERIOR */
+	margin-left: 15px;				/*COLOCA UM ESPAÇO A ESQUERDA*/
+}
+
+.filme-principal .titulo{
+	margin-top: 50%;				/*COLOCA UMA COR DE FUNDO */
+	margin-left: 15px;				/*COLOCA UM ESPAÇO A ESQUERDA*/
+	font-size: 30px;				/*TAMANHO DA LETRA */	
+}
+
+.botao{
+	background: rgba(0,0,0,.50);	/*COLOCA UMA COR DE FUNDO */
+	border: none;					/*RETIRA A BORDA */
+	color: 	white;					/*COR DA LETRA */
+	padding: 15px 30px;				/*ESPAÇAMENTO INTERNO */
+	margin-right: 15px;				/*ESPAÇAMENTO A ESQUERDA */
+	font-size: 12px;				/*TAMANHO DA LETRA */
+	cursor: pointer;
+}
+
+.botao:hover{						/*ESTADO QUANDO PASSA O MOUSE */
+	background-color: white;		/*COLOCA UMA COR DE FUNDO */
+	color: black;					/*COR DA LETRA */
+}
+
+.box-filmes{
+	height: 100%;					/*DEFINIDA ALTURA */
+	width: 100%;					/*DEFINIDA LARGURA */
+	display: block;					/*CONFIGURADO DISPLAY */
+}
